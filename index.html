@@ -9,8 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Bryan Cusme</h1>
-      <h2>Desarrollador web</h2>
+      <div class="texto">
+        <h1>Bryan Cusme</h1>
+        <h2>Desarrollador web</h2>
+        <button id="btn">Contacto</button>
+      </div>
       <div class="icons">
         <a href="https://www.linkedin.com/in/bryan-cusme/" target="blank"
           ><img src="icons/linkedin.png"
@@ -23,5 +26,16 @@
         /></a>
       </div>
     </div>
+    <script>
+      window.onload = iniciar;
+      function iniciar() {
+        let btn = document.querySelector("#btn");
+        let icons = document.querySelector(".icons");
+
+        btn.addEventListener("click", () => {
+          icons.style.display = "flex";
+        });
+      }
+    </script>
   </body>
 </html>
